@@ -10,8 +10,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final CalendarController _controller = CalendarController();
-  // Set of String is required for selected property of SegmentedButton
-  Set<String> selected = {'day'};
   @override
   Widget build(BuildContext context) {
     _controller.view = CalendarView.month;
